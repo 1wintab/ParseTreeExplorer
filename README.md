@@ -1,4 +1,4 @@
-# 🌳 ParseTreeExplorer 🌳
+# 🌳 Binary Expression Tree🌳
 
 [![GitHub](https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github)](https://github.com/1wintab/ParseTreeExplorer)
 [![License](https://img.shields.io/badge/License-yellow?style=for-the-badge&logo=github)](https://github.com/1wintab/ParseTreeExplorer/blob/master/LICENSE.txt)
