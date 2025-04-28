@@ -1,4 +1,4 @@
-# 🌳 ParseTreeExplorer 🌳
+# <span style="color: #5dba8d;">🌳 Binary Expression Tree 🌳</span>
 
 [![GitHub](https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github)](https://github.com/1wintab/ParseTreeExplorer)
 [![License](https://img.shields.io/badge/License-yellow?style=for-the-badge&logo=github)](https://github.com/1wintab/ParseTreeExplorer/blob/master/LICENSE.txt)
@@ -6,8 +6,7 @@
 
 ![start](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHBiODlyYmwyZ2JlNDN6ZnQ0c3Y4a3pxbTBrZmJyaTM3dHQ3ZjBwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/stYnZNptINFsY/giphy.gif)  
 
-✨ A fun C++ project that builds expression trees from math equations! ✨
-
+<span style="color: yellow">✨ A fun C++ project that builds expression trees from math equations! ✨</span>
 
 # ✨ Key Features
 
