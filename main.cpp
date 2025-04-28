@@ -43,8 +43,8 @@ void Shutdown()
 	ClearConsole();
 
 	std::cout << "========================================================\n"
-		<< "                 Closing the program....                \n"
-		<< "========================================================\n";
+		  << "                 Closing the program....                \n"
+		  << "========================================================\n";
 
 	exit(EXIT_SUCCESS);
 }
@@ -87,16 +87,16 @@ void ProgramMenu()
 		ClearConsole();
 
 		std::cout << "========================================================\n"
-			<< "                    >> Binary tree <<                   \n"
-			<< "========================================================\n"
-			<< " #1. Create binary tree.                                \n"
-			<< " #2. Delete binary tree.                                \n"
-			<< " #3. Show binary tree traversals.                       \n\n"
+			  << "                    >> Binary tree <<                   \n"
+			  << "========================================================\n"
+			  << " #1. Create binary tree.                                \n"
+			  << " #2. Delete binary tree.                                \n"
+			  << " #3. Show binary tree traversals.                       \n\n"
 
-			<< " #4. Exit program.                                      \n"
-			<< "========================================================\n\n"
+			  << " #4. Exit program.                                      \n"
+			  << "========================================================\n\n"
 
-			<< "Enter option number: ";
+			  << "Enter option number: ";
 
 		std::cin >> choice;
 		ClearConsole();
@@ -121,8 +121,8 @@ void ProgramMenu()
 
 		default:
 			std::cerr << "========================================================\n"
-				<< "          Invalid menu option! Please try again.        \n"
-				<< "========================================================\n";
+				  << "          Invalid menu option! Please try again.        \n"
+				  << "========================================================\n";
 			WaitForEnter();
 		}
 	} while (true);
@@ -137,11 +137,11 @@ void CreateTreeMenu(std::string& postfix, Node*& root)
 		do
 		{
 			std::cout << "========================================================\n"
-				<< "               Binaty tree already exists!              \n"
-				<< "           Are you sure you want to delelte it?         \n"
-				<< "========================================================\n"
+				  << "               Binaty tree already exists!              \n"
+				  << "           Are you sure you want to delelte it?         \n"
+				  << "========================================================\n"
 
-				<< "Yes/No (y/n): ";
+				  << "Yes/No (y/n): ";
 
 			std::cin >> choice;
 			ClearConsole();
@@ -154,26 +154,26 @@ void CreateTreeMenu(std::string& postfix, Node*& root)
 			postfix.clear();
 
 			std::cout << "========================================================\n"
-				<< "            Binary tree successfully deleted!           \n"
-				<< "========================================================\n";
+				  << "            Binary tree successfully deleted!           \n"
+				  << "========================================================\n";
 			WaitForEnter();
 			ClearConsole();
 		}
 		else
 		{
 			std::cout << "========================================================\n"
-				<< "                Binary tree not deleted!                \n"
-				<< "========================================================\n";
+				  << "                Binary tree not deleted!                \n"
+				  << "========================================================\n";
 			WaitForEnter();
 			return;
 		}
 	}
 
 	std::cout << "========================================================\n"
-		<< "                    Create binary tree                  \n"
-		<< "========================================================\n"
-		<< " > Enter arifmetic expression: [e.g. (a + b) * c]       \n\n"
-		<< "   ";
+		  << "                    Create binary tree                  \n"
+		  << "========================================================\n"
+		  << " > Enter arifmetic expression: [e.g. (a + b) * c]       \n\n"
+		  << "   ";
 
 	std::string input;
 
@@ -184,17 +184,17 @@ void CreateTreeMenu(std::string& postfix, Node*& root)
 	{
 		ClearConsole();
 		std::cerr << "========================================================\n"
-			<< "                   Error! Empty input.                  \n"
-			<< "            Please, enter a valid expression.           \n"
-			<< "========================================================\n";
+			  << "                   Error! Empty input.                  \n"
+			  << "            Please, enter a valid expression.           \n"
+			  << "========================================================\n";
 		WaitForEnter();
 		return;
 	}
 	else if (input.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-*/() ") != std::string::npos)
 	{
 		std::cerr << "========================================================\n"
-			<< "      Error! Expression contains invalid characters!    \n"
-			<< "========================================================\n";
+			  << "      Error! Expression contains invalid characters!    \n"
+			  << "========================================================\n";
 		WaitForEnter();
 		return;
 	}
@@ -202,13 +202,13 @@ void CreateTreeMenu(std::string& postfix, Node*& root)
 	ClearConsole();
 
 	std::cout << "========================================================\n"
-		<< "   ! Binary tree creation requires postfix notation, !  \n"
-		<< "   !     which will be automatically generated       !  \n"
-		<< "   !                from you input.                  !  \n"
-		<< "========================================================\n\n"
+		  << "   ! Binary tree creation requires postfix notation, !  \n"
+		  << "   !     which will be automatically generated       !  \n"
+		  << "   !                from you input.                  !  \n"
+		  << "========================================================\n\n"
 
-		<< ">> User input:     " << input << "               \n"
-		<< ">> Filtered data:  " << CleanInput(input) << "   \n\n";
+		  << ">> User input:     " << input << "               \n"
+		  << ">> Filtered data:  " << CleanInput(input) << "   \n\n";
 
 	ConvertInfixToPostfix(CleanInput(input), postfix);
 	std::cout << ">> Postfix form:   " << postfix << "             \n";
@@ -217,8 +217,8 @@ void CreateTreeMenu(std::string& postfix, Node*& root)
 	ClearConsole();
 	BuiltBinaryTree(postfix, root);
 	std::cout << "========================================================\n"
-		<< "            Binary tree successfully created!           \n"
-		<< "========================================================\n";
+		  << "            Binary tree successfully created!           \n"
+		  << "========================================================\n";
 	WaitForEnter();
 }
 
@@ -358,12 +358,12 @@ void BuiltBinaryTree(const std::string& postfix, Node*& root)
 			if (NodeStack.size() < 2)
 			{
 				std::cerr << "========================================================\n"
-					<< "                         Error!                         \n"
-					<< "========================================================\n"
-					<< "  Not enough operands for operator '" << c << "'         \n"
-					<< "  Each operator requires exactly 2 operands             \n"
-					<< "  Example:  'a b *' або '2 3 +'                          \n"
-					<< "========================================================\n";
+					  << "                         Error!                         \n"
+					  << "========================================================\n"
+					  << "  Not enough operands for operator '" << c << "'         \n"
+					  << "  Each operator requires exactly 2 operands             \n"
+					  << "  Example:  'a b *' або '2 3 +'                          \n"
+					  << "========================================================\n";
 
 				// Clear stack (memory leak prevention)
 				while (!NodeStack.empty())
@@ -397,9 +397,9 @@ void BuiltBinaryTree(const std::string& postfix, Node*& root)
 	if (NodeStack.size() != 1)
 	{
 		std::cerr << "========================================================\n"
-			<< "                         Error!                         \n"
-			<< "             Postfix expression is malformed.           \n"
-			<< "========================================================\n";
+			  << "                         Error!                         \n"
+			  << "             Postfix expression is malformed.           \n"
+			  << "========================================================\n";
 
 		// Clear stack (memory leak prevention)
 		while (!NodeStack.empty())
@@ -438,10 +438,10 @@ static void ConfirmAndDeleteTree(std::string& postfix, Node*& root)
 		do
 		{
 			std::cout << "========================================================\n"
-				<< "    Are you sure you want to delete the binary tree?   \n"
-				<< "========================================================\n"
+				  << "    Are you sure you want to delete the binary tree?   \n"
+				  << "========================================================\n"
 
-				<< "Yes/No (y/n): ";
+				  << "Yes/No (y/n): ";
 
 			std::cin >> choice;
 
@@ -454,23 +454,23 @@ static void ConfirmAndDeleteTree(std::string& postfix, Node*& root)
 			postfix.clear();
 			RemoveTree(root);
 			std::cout << "========================================================\n"
-				<< "           Binary tree successfully deleted!            \n"
-				<< "========================================================\n";
+				  << "           Binary tree successfully deleted!            \n"
+				  << "========================================================\n";
 			WaitForEnter();
 		}
 		else
 		{
 			std::cout << "========================================================\n"
-				<< "              Binary tree not deleted!                  \n"
-				<< "========================================================\n";
+				  << "              Binary tree not deleted!                  \n"
+				  << "========================================================\n";
 			WaitForEnter();
 		}
 	}
 	else
 	{
 		std::cerr << "========================================================\n"
-			<< "             Binary tree not created yet!               \n"
-			<< "========================================================\n";
+			  << "             Binary tree not created yet!               \n"
+			  << "========================================================\n";
 		WaitForEnter();
 	}
 }
@@ -480,8 +480,8 @@ void TraverseTreeMenu(Node*& root)
 	if (root != nullptr)
 	{
 		std::cout << "========================================================\n"
-			<< "                 Binary Tree Traversals                 \n"
-			<< "========================================================\n\n";
+			  << "                 Binary Tree Traversals                 \n"
+			  << "========================================================\n\n";
 
 		std::cout << "Pre-order: "; preOrder(root); std::cout << "       \n";
 		std::cout << "Post-order: "; postOrder(root); std::cout << "   \n\n";
@@ -493,8 +493,8 @@ void TraverseTreeMenu(Node*& root)
 	else
 	{
 		std::cerr << "========================================================\n"
-			<< "              Binary tree not created yet!              \n"
-			<< "========================================================\n";
+			  << "              Binary tree not created yet!              \n"
+			  << "========================================================\n";
 		WaitForEnter();
 	}
 }
