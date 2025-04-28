@@ -58,7 +58,7 @@
 2. [![Repos](https://img.shields.io/badge/%F0%9F%93%81_All_Repositories-white)](https://github.com/1wintab?tab=repositories)  
    *Complete list of my work*
 
-3. [![Project](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Second_Project-f4ed82)](https://github.com/1wintab/ArraySearcher)  
+3. [![Project](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Second_Project-a88332)](https://github.com/1wintab/ArraySearcher)  
    *My second C++ project*
 
 ## 📜 License
